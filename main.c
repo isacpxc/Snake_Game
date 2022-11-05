@@ -13,18 +13,18 @@ int main()
             if (i == 0 || i == m-1){
                 p_Area[i][j_0] = '#'; j_0++;
                 if (j != n-1) {p_Area[i][j_0] = ' '; j_0++;}
-                printf("#");
-                printf(" ");
+//                printf("#");
+//                printf(" ");
                 if (j == n-1) {
-                    printf("\n");
+//                    printf("\n");
                     p_Area[i][j_0] = '\n';
                     j_0++;
                 }
             } else if (j>=0) {
                 if (j == 0 || j == n-1){
-                    if (j==0) {printf("#");p_Area[i][j_0] = '#';j_0++;}
+                    if (j==0) {/*printf("#");*/p_Area[i][j_0] = '#';j_0++;}
                     if (j==n-1) {
-                        printf(" #\n");
+//                        printf(" #\n");
                         p_Area[i][j_0] = ' ';
                         j_0++;
                         p_Area[i][j_0] = '#';
@@ -33,7 +33,7 @@ int main()
                         j_0++;
                     }
                 } else {
-                    printf("  ");
+//                    printf("  ");
                     p_Area[i][j_0] = ' ';j_0++;
                     p_Area[i][j_0] = ' ';j_0++;
                 }
@@ -45,7 +45,7 @@ int main()
 
 
 
-    printf("\n\n\n\n");
+//    printf("\n\n\n\n");
 
     for (size_t i = 0; i<m ; i++){
         for (size_t j = 0; j<(n*2) ; j++){
