@@ -10,6 +10,7 @@ int main()
 
     for (size_t i = 0; i<m ; i++){
         for (size_t j = 0,j_0 = 0; j<n ; j++){
+
             if (i == 0 || i == m-1){
                 p_Area[i][j_0] = '#'; j_0++;
                 if (j != n-1) {p_Area[i][j_0] = ' '; j_0++;}
@@ -41,17 +42,24 @@ int main()
 
         }
     }
-
+    p_Area[10][20] = '0';
 
 
 
 //    printf("\n\n\n\n");
 
+
+printf("=======PRESS ENTER TO START=======");
+while(getch() != 'e'){
+    system("cls");
     for (size_t i = 0; i<m ; i++){
         for (size_t j = 0; j<(n*2) ; j++){
             printf("%c", p_Area[i][j]);
         }
     }
+}
+
+
 
 
 
